@@ -13,8 +13,11 @@ function formatTime(ts) {
 	try { return new Date(ts).toLocaleTimeString(); } catch { return ''; }
 }
 
+const API_BASE_URL = window.__API_BASE_URL || '';
+const SOCKET_URL = window.__SOCKET_URL || API_BASE_URL || '';
+
 async function api(path, options = {}) {
-	const res = await fetch(path, {
+    const res = await fetch(`${API_BASE_URL}${path}`, {
 		credentials: 'include',
 		headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
 		...options,
@@ -133,7 +136,10 @@ function connectSocket() {
 		state.socket.disconnect();
 		state.socket = null;
 	}
-	state.socket = io('/');
+    state.socket = io(SOCKET_URL || '/', {
+        withCredentials: true,
+        transports: ['websocket', 'polling']
+    });
 	state.socket.on('connect', () => {});
 	state.socket.on('direct_message', (m) => {
 		if (m.sender_id === state.activeUserId || m.recipient_id === state.activeUserId) {
@@ -152,7 +158,7 @@ async function handleSend() {
 	if (fileInput.files && fileInput.files[0]) {
 		const form = new FormData();
 		form.append('file', fileInput.files[0]);
-		const res = await fetch('/api/upload', { method: 'POST', body: form, credentials: 'include' });
+        const res = await fetch(`${API_BASE_URL}/api/upload`, { method: 'POST', body: form, credentials: 'include' });
 		if (!res.ok) { alert('Ошибка загрузки файла'); return; }
 		fileUrl = (await res.json()).fileUrl;
 		fileInput.value = '';
