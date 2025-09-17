@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Простой мессенджер</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<div id="app">
+		<div id="auth">
+			<h2>Вход</h2>
+			<input id="login-username" placeholder="Имя пользователя" />
+			<input id="login-password" type="password" placeholder="Пароль" />
+			<button id="login-btn">Войти</button>
+			<p>Нет аккаунта? <a href="#" id="to-register">Зарегистрироваться</a></p>
+		</div>
+
+		<div id="register" class="hidden">
+			<h2>Регистрация</h2>
+			<input id="register-username" placeholder="Имя пользователя" />
+			<input id="register-password" type="password" placeholder="Пароль (мин. 6)" />
+			<button id="register-btn">Создать аккаунт</button>
+			<p>Есть аккаунт? <a href="#" id="to-login">Войти</a></p>
+		</div>
+
+		<div id="chat" class="hidden">
+			<div class="topbar">
+				<div class="me"><span id="me-name"></span><span id="admin-badge" class="admin-badge hidden">ADMIN</span></div>
+				<div class="topbar-buttons">
+					<button id="admin-btn" class="admin-btn hidden">Админ-панель</button>
+					<button id="logout-btn">Выйти</button>
+				</div>
+			</div>
+			<div class="layout">
+				<div class="users">
+					<h3>Пользователи</h3>
+					<ul id="users-list"></ul>
+				</div>
+				<div class="messages">
+					<div id="conversation" class="conversation"></div>
+					<div class="composer">
+						<input id="message-input" placeholder="Сообщение" />
+						<input type="file" id="file-input" />
+						<button id="send-btn">Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="admin-panel" class="hidden">
+			<div class="admin-header">
+				<h2>Админ-панель</h2>
+				<button id="back-to-chat-btn">← Назад к чату</button>
+			</div>
+			<div class="admin-content">
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Всего пользователей</h3>
+						<div class="stat-number" id="total-users">-</div>
+					</div>
+					<div class="stat-card">
+						<h3>Всего сообщений</h3>
+						<div class="stat-number" id="total-messages">-</div>
+					</div>
+					<div class="stat-card">
+						<h3>Сообщений сегодня</h3>
+						<div class="stat-number" id="messages-today">-</div>
+					</div>
+				</div>
+				<div class="users-table-container">
+					<h3>Пользователи</h3>
+					<table class="users-table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Имя пользователя</th>
+								<th>Статус</th>
+								<th>Сообщений</th>
+								<th>Дата регистрации</th>
+							</tr>
+						</thead>
+						<tbody id="admin-users-list">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+	<script src="/app.js"></script>
+</body>
+</html> 
