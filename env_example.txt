@@ -1,0 +1,21 @@
+# Настройки для продакшена
+NODE_ENV=production
+
+# Секретный ключ для JWT токенов (ОБЯЗАТЕЛЬНО СМЕНИТЕ!)
+JWT_SECRET=your-super-secret-jwt-key-here-change-me
+
+# Порт для сервера (обычно устанавливается хостингом автоматически)
+PORT=8080
+
+# URL домена (для CORS и других настроек)
+DOMAIN=https://yourdomain.com
+
+# Настройки базы данных (если используете внешнюю БД)
+# DATABASE_URL=sqlite:./data.sqlite
+
+# Настройки загрузки файлов
+MAX_FILE_SIZE=10485760
+ALLOWED_FILE_TYPES=jpg,jpeg,png,gif,pdf,doc,docx,txt
+
+# Логирование
+LOG_LEVEL=info

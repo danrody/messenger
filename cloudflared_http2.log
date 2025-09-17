@@ -1,0 +1,98 @@
+{"level":"info","time":"2025-09-17T07:21:06Z","message":"Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps"}
+{"level":"info","time":"2025-09-17T07:21:06Z","message":"Requesting new quick Tunnel on trycloudflare.com..."}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"|  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"|  https://genesis-holes-dvds-lamb.trycloudflare.com                                         |"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"GOOS: windows, GOVersion: go1.24.2, GoArch: amd64"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"Settings: map[ha-connections:1 logfile:cloudflared_http2.log loglevel:info no-autoupdate:true p:http2 protocol:http2 url:http://localhost:8080]"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"cloudflared will not automatically update on Windows systems."}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"Generated Connector ID: 7af7af21-f02e-4ee4-adb9-5bacb356fc20"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"Initial protocol http2"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"ICMP proxy will use 172.28.131.245 as source for IPv4"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"ICMP proxy will use fe80::f048:d872:a572:2c0 in zone Беспроводная сеть as source for IPv6"}
+{"level":"error","originCertPath":"","time":"2025-09-17T07:21:10Z","message":"Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"ICMP proxy will use 172.28.131.245 as source for IPv4"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"ICMP proxy will use fe80::f048:d872:a572:2c0 in zone Беспроводная сеть as source for IPv6"}
+{"level":"info","time":"2025-09-17T07:21:10Z","message":"Starting metrics server on 127.0.0.1:20241/metrics"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2025-09-17T07:21:15Z","message":"Failed to initialize DNS local resolver"}
+{"level":"error","event":0,"ip":"198.41.200.23","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:34555->198.41.200.23:7844: i/o timeout","time":"2025-09-17T07:21:25Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.23","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:34555->198.41.200.23:7844: i/o timeout","time":"2025-09-17T07:21:25Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.23","connIndex":0,"time":"2025-09-17T07:21:25Z","message":"Retrying connection in up to 2s"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:63025->198.41.200.193:7844: i/o timeout","time":"2025-09-17T07:21:42Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:63025->198.41.200.193:7844: i/o timeout","time":"2025-09-17T07:21:42Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2025-09-17T07:21:42Z","message":"Retrying connection in up to 4s"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30061->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:21:59Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30061->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:21:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.33","connIndex":0,"time":"2025-09-17T07:21:59Z","message":"Retrying connection in up to 8s"}
+{"level":"error","event":0,"ip":"198.41.192.27","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:44793->198.41.192.27:7844: i/o timeout","time":"2025-09-17T07:22:20Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.27","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:44793->198.41.192.27:7844: i/o timeout","time":"2025-09-17T07:22:20Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.27","connIndex":0,"time":"2025-09-17T07:22:20Z","message":"Retrying connection in up to 16s"}
+{"level":"error","event":0,"ip":"198.41.192.167","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:12486->198.41.192.167:7844: i/o timeout","time":"2025-09-17T07:22:44Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.167","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:12486->198.41.192.167:7844: i/o timeout","time":"2025-09-17T07:22:44Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.167","connIndex":0,"time":"2025-09-17T07:22:44Z","message":"Retrying connection in up to 32s"}
+{"level":"error","event":0,"ip":"198.41.192.47","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:47419->198.41.192.47:7844: i/o timeout","time":"2025-09-17T07:23:04Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.47","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:47419->198.41.192.47:7844: i/o timeout","time":"2025-09-17T07:23:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.47","connIndex":0,"time":"2025-09-17T07:23:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:18379->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:23:34Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:18379->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:23:34Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.33","connIndex":0,"time":"2025-09-17T07:23:34Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.27","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:19948->198.41.192.27:7844: i/o timeout","time":"2025-09-17T07:23:58Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.27","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:19948->198.41.192.27:7844: i/o timeout","time":"2025-09-17T07:23:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.27","connIndex":0,"time":"2025-09-17T07:23:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.233","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:10659->198.41.200.233:7844: i/o timeout","time":"2025-09-17T07:24:34Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.233","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:10659->198.41.200.233:7844: i/o timeout","time":"2025-09-17T07:24:34Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.233","connIndex":0,"time":"2025-09-17T07:24:34Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:22885->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:25:05Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:22885->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:25:05Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.33","connIndex":0,"time":"2025-09-17T07:25:05Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.63","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:35344->198.41.200.63:7844: i/o timeout","time":"2025-09-17T07:25:51Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.63","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:35344->198.41.200.63:7844: i/o timeout","time":"2025-09-17T07:25:51Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.63","connIndex":0,"time":"2025-09-17T07:25:51Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.13","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:35355->198.41.200.13:7844: i/o timeout","time":"2025-09-17T07:26:08Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.13","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:35355->198.41.200.13:7844: i/o timeout","time":"2025-09-17T07:26:08Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.13","connIndex":0,"time":"2025-09-17T07:26:08Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2025-09-17T07:26:20Z","message":"Failed to refresh DNS local resolver"}
+{"level":"error","event":0,"ip":"198.41.200.43","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:35362->198.41.200.43:7844: i/o timeout","time":"2025-09-17T07:26:32Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.43","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:35362->198.41.200.43:7844: i/o timeout","time":"2025-09-17T07:26:32Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.43","connIndex":0,"time":"2025-09-17T07:26:32Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:18629->198.41.200.193:7844: i/o timeout","time":"2025-09-17T07:26:59Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:18629->198.41.200.193:7844: i/o timeout","time":"2025-09-17T07:26:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2025-09-17T07:26:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:23632->198.41.200.53:7844: i/o timeout","time":"2025-09-17T07:27:24Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:23632->198.41.200.53:7844: i/o timeout","time":"2025-09-17T07:27:24Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2025-09-17T07:27:24Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:4579->198.41.192.227:7844: i/o timeout","time":"2025-09-17T07:27:59Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:4579->198.41.192.227:7844: i/o timeout","time":"2025-09-17T07:27:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2025-09-17T07:27:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30127->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:28:28Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.33","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30127->198.41.200.33:7844: i/o timeout","time":"2025-09-17T07:28:28Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.33","connIndex":0,"time":"2025-09-17T07:28:28Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.107","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:38396->198.41.192.107:7844: i/o timeout","time":"2025-09-17T07:28:56Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.107","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:38396->198.41.192.107:7844: i/o timeout","time":"2025-09-17T07:28:56Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.107","connIndex":0,"time":"2025-09-17T07:28:56Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.57","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30241->198.41.192.57:7844: i/o timeout","time":"2025-09-17T07:29:36Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.57","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30241->198.41.192.57:7844: i/o timeout","time":"2025-09-17T07:29:36Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.57","connIndex":0,"time":"2025-09-17T07:29:36Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.27","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:38533->198.41.192.27:7844: i/o timeout","time":"2025-09-17T07:30:00Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.27","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:38533->198.41.192.27:7844: i/o timeout","time":"2025-09-17T07:30:00Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.27","connIndex":0,"time":"2025-09-17T07:30:00Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.7","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30419->198.41.192.7:7844: i/o timeout","time":"2025-09-17T07:30:45Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.7","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:30419->198.41.192.7:7844: i/o timeout","time":"2025-09-17T07:30:45Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.7","connIndex":0,"time":"2025-09-17T07:30:45Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.192.67","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:4224->198.41.192.67:7844: i/o timeout","time":"2025-09-17T07:31:02Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.192.67","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:4224->198.41.192.67:7844: i/o timeout","time":"2025-09-17T07:31:02Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.192.67","connIndex":0,"time":"2025-09-17T07:31:02Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","event":0,"ip":"198.41.200.43","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:46250->198.41.200.43:7844: i/o timeout","time":"2025-09-17T07:31:19Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.43","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:46250->198.41.200.43:7844: i/o timeout","time":"2025-09-17T07:31:19Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.43","connIndex":0,"time":"2025-09-17T07:31:19Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2025-09-17T07:31:25Z","message":"Failed to refresh DNS local resolver"}
+{"level":"error","event":0,"ip":"198.41.200.73","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:17488->198.41.200.73:7844: i/o timeout","time":"2025-09-17T07:31:46Z","message":"Unable to establish connection with Cloudflare edge"}
+{"level":"error","event":0,"ip":"198.41.200.73","connIndex":0,"error":"TLS handshake with edge error: read tcp 172.28.131.245:17488->198.41.200.73:7844: i/o timeout","time":"2025-09-17T07:31:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.73","connIndex":0,"time":"2025-09-17T07:31:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","time":"2025-09-17T07:32:00Z","message":"Initiating graceful shutdown due to signal terminated ..."}
+{"level":"info","time":"2025-09-17T07:32:00Z","message":"Tunnel server stopped"}
+{"level":"info","time":"2025-09-17T07:32:00Z","message":"Metrics server stopped"}
