@@ -16,6 +16,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-me-in-production';
+// If your frontend runs on a different domain (e.g., Vercel), set FRONTEND_ORIGIN to that exact origin
+// Example: FRONTEND_ORIGIN=https://your-app.vercel.app and CROSS_SITE=true
+const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || true; // true = reflect request origin (dev); set exact origin in prod
+const IS_CROSS_SITE = String(process.env.CROSS_SITE || '').toLowerCase() === 'true';
 const UPLOAD_DIR = path.join(__dirname, 'uploads');
 
 if (!fs.existsSync(UPLOAD_DIR)) {
@@ -99,8 +103,8 @@ function issueToken(res, user) {
   const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
   res.cookie('token', token, {
     httpOnly: true,
-    sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production',
+    sameSite: IS_CROSS_SITE ? 'none' : 'lax',
+    secure: IS_CROSS_SITE || (process.env.NODE_ENV === 'production'),
     maxAge: 7 * 24 * 60 * 60 * 1000
   });
   return token;
@@ -110,12 +114,12 @@ const app = express();
 const server = http.createServer(app);
 const io = new SocketIOServer(server, {
   cors: {
-    origin: true,
+    origin: FRONTEND_ORIGIN,
     credentials: true
   }
 });
 
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({ origin: FRONTEND_ORIGIN, credentials: true }));
 app.use(express.json({ limit: '10mb' }));
 app.use(cookieParser());
 app.use('/uploads', express.static(UPLOAD_DIR));
